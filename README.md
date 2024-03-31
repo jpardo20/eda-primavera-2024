@@ -18,17 +18,24 @@
 >
 > **5.** [Exemple de la **Classe** **`Interfície`** **`Mainaderia`**](#5-un-exemple-de-la-classe-interfície-mainaderia)
 >
-> **6.** [Implementació de la **`Interfície`** **`Mainaderia`**](#6-una-implementació-de-la-interfície-mainaderia-que-utilitza-un-objecte-list)
+> **6.** [Implementació de **`MainaderiaList`**](#6-una-implementació-de-mainaderialist-que-implementa-la-interfície-mainaderia-utilitzant-un-objecte-list)
 >
 > **7.** [Exemple de la **Classe** **`ExempleIteracio`**](#7-un-exemple-de-la-classe-exempleiteracio)
+>
+>
+> **8.** [Primer exemple de la **Classe** **`Criatura`** amb **`Maps`**](#8-primer-exemple-exemple_map_01java-de-la-classe-criatura-amb-maps)
+>
+>
+> **9.** [Segon exemple de la **Classe** **`Criatura`** amb **`Maps`**](#9-segon-exemple-exemple_map_02java-de-la-classe-criatura-amb-maps)
 >
 > <hr>
 >
 </details>
 
+
 ## **1.** La **Classe `Element`** (classe utilitzada en els següents exemples)
 
-<details><summary>Pitja per veure el codi</summary>
+<details><summary>Pitja per veure el codi de la Classe Element</summary>
 
 ```java
 public class Element {
@@ -85,6 +92,8 @@ public class Element {
 <hr>
 
 ## **2.** Un exemple de la **Classe** **`Interfície`** **`Collection`**
+
+<details><summary>Pitja per veure el codi de la Classe Collection</summary>
 
 ```java
 import java.util.ArrayList;
@@ -152,6 +161,7 @@ public class ExempleCollection {
     }
 }
 ```
+</details>
 
 #### Aquí podeu trobar el codi de la **`interfície`** [**`ExempleCollection.java`**](./files/ExempleCollection.java)
 
@@ -171,6 +181,8 @@ Sum is: 36
 <hr>
 
 ## **3.** La **Classe** **`Criatura`** (classe utilitzada en els següents exemples)
+
+<details><summary>Pitja per veure el codi de la Classe Criatura</summary>
 
 ```java
 public class Criatura implements Comparable {
@@ -244,6 +256,7 @@ public class Criatura implements Comparable {
     }
 }
 ```
+</details>
 
 > ### [Implementa la **Classe** **`Interfície`** de **Java** **`Comparable<T>`**](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
 
@@ -252,6 +265,8 @@ public class Criatura implements Comparable {
 <hr>
 
 ## **4.** Un exemple de la **Classe** **`GuardarCriatures`** que d’utilitza la **`Classe`** **`List`** de **Java**
+
+<details><summary>Pitja per veure el codi de la Classe GuardarCriatures</summary>
 
 ```java
 import java.util.LinkedList;
@@ -305,6 +320,7 @@ public class GuardarCriatures {
     }
 }
 ```
+</details>
 
 #### Aquí podeu trobar el codi de la **`Classe`** [**`GuardarCriatures.java`**](./files/GuardarCriatures.java)
 
@@ -327,6 +343,8 @@ Criatura de nom OLGA    amb 2 anys              i amb sexe de nena.
 <hr>
 
 ## **5.** Un exemple de la **Classe** **`Interfície`** **`Mainaderia`**
+
+<details><summary>Pitja per veure el codi de la Classe Mainaderia</summary>
 
 ```java
 public interface Mainaderia {
@@ -356,12 +374,15 @@ public interface Mainaderia {
     
 }
 ```
+</details>
 
 #### Aquí podeu trobar el codi de la **`Interfície`** [**`Mainaderia.java`**](./files/Mainaderia.java)
 
 <hr>
 
-## **6.** Una implementació de la **`Interfície`** **`Mainaderia`** que utilitza un objecte List
+## **6.** Una implementació de **`MainaderiaList`** que implementa la **`Interfície`** **`Mainaderia`** utilitzant un objecte **`List`**
+
+<details><summary>Pitja per veure el codi de la Classe MainaderiaList</summary>
 
 ```java
 import java.util.*;
@@ -438,12 +459,17 @@ public class MainaderiaList implements Mainaderia {
     }
 }
 ```
+</details>
+
 
 #### Aquí podeu trobar el codi de la **`Classe`** [**`MainaderiaList.java`**](./files/MainaderiaList.java)
 
 <hr>
 
 ## **7.** Un exemple de la **Classe** **`ExempleIteracio`**
+
+<details><summary>Pitja per veure el codi de la Classe ExempleIteracio</summary>
+
 
 ```java
 import java.util.Iterator;
@@ -530,6 +556,9 @@ public class ExempleIteracio {
 }
 ```
 
+</details>
+
+
 #### Aquí podeu trobar el codi de la **`Classe`** [**`ExempleIteracio.java`**](./files/ExempleIteracio.java)
 
 #### Sortida de l'execució de la **`Classe`** **`ExempleIteracio`**. 
@@ -564,6 +593,8 @@ Criatura de nom: FIONA, té 2 anys. Sexe: nena
 <hr>
 
 ## **8.** Primer exemple (**`Exemple_Map_01.java`**) de la **Classe** **`Criatura`** amb **`Maps`**
+
+<details><summary>Pitja per veure el codi de la Classe Exemple_Map_01</summary>
 
 ```java
 import java.util.*;
@@ -629,7 +660,72 @@ public class Exemple_Map_01 {
     }
 }
 ```
+</details>
 
 #### Aquí podeu trobar el codi de la **`Classe`** [**`Exemple_Map_01.java`**](./files/Exemple_Map_01.java)
 
+<hr>
 
+## **9.** Segon exemple (**`Exemple_Map_02.java`**) de la **Classe** **`Criatura`** amb **`Maps`**
+
+<details><summary>Pitja per veure el codi de la Classe Exemple_Map_02</summary>
+
+```java
+import java.util.*;
+public class Exemple_Map_02 {
+    public static void main (String [] args) {
+        Criatura [] poblacio = {
+                new Criatura("NIL",0,Criatura.NEN),
+                new Criatura("PERE",1, Criatura.NEN),
+                new Criatura("NEUS",0, Criatura.NENA),
+                new Criatura("ONA",1, Criatura.NENA),
+                new Criatura("DÍDAC",0, Criatura.NEN),
+                new Criatura("NÚRIA",1, Criatura.NEN),
+                new Criatura("EVA",3, Criatura.NENA),
+                new Criatura("FIONA",2, Criatura.NENA),
+                new Criatura("ENIA",3, Criatura.NENA)
+        };
+        // Map per aparellar cada criatura amb el nom del seu pediatra
+        Map<Criatura,String> serveiPediatria;
+        String nomPediatra;
+        serveiPediatria = new HashMap<Criatura, String>();
+        //els tres primers amb el Dr. Abelardo
+        for (int i=0; i<3; i++) {
+            serveiPediatria.put(poblacio[i], "Abelardo");  }
+        //els tres següents amb la Dra. Banach
+        for (int i=3; i<6; i++) {
+            serveiPediatria.put(poblacio[i], "Banach");  }
+        //i tota la resta amb la Dra. Canyet
+        for (int i=6; i<poblacio.length; i++) {
+            serveiPediatria.put(poblacio[i], "Canyet");  }
+        // Ara podem consultar qui es el pedriatra de cada criatura:
+        System.out.println();
+        for (Criatura c: poblacio) {
+            nomPediatra = serveiPediatria.get(c);
+            System.out.println("El/la pediatra de la critura");  System.out.println(" "+c);
+            System.out.println(" és el/la Dr./Dra. "+ nomPediatra);
+        }
+        // Map també ens permet recuperar el conjunt de claus
+        // (en aquest cas les claus són les criatures)
+        Set<Criatura> criaturesAteses;
+        criaturesAteses = serveiPediatria.keySet();
+        System.out.println("\n Les criatures ateses pel servei són:");
+        for (Criatura c : criaturesAteses)
+            System.out.println(" "+c);
+
+        // Map ens permet recuperar la col·lecció de valors associats
+        // a les claus (en aquest exemple els valors són els pediatres
+        // -Strings-)
+        Collection<String> pediatres;
+        pediatres = serveiPediatria.values();
+        System.out.println("\n Els/les pediatres del servei són:");
+        for (String ped : pediatres)
+            System.out.println(" "+ped);
+
+    }
+}
+
+```
+</details>
+
+#### Aquí podeu trobar el codi de la **`Classe`** [**`Exemple_Map_02.java`**](./files/Exemple_Map_02.java)
