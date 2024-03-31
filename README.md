@@ -76,7 +76,7 @@ public class Element {
 }
 ```
 
-#### Aquí podeu trobar el codi de la **Classe** [**`Element.java`**](./Element.java)
+#### Aquí podeu trobar el codi de la **Classe** [**`Element.java`**](./files/Element.java)
 
 <hr>
 
@@ -149,7 +149,7 @@ public class ExempleCollection {
 }
 ```
 
-#### Aquí podeu trobar el codi de la **`interfície`** [**`ExempleCollection.java`**](./ExempleCollection.java)
+#### Aquí podeu trobar el codi de la **`interfície`** [**`ExempleCollection.java`**](./files/ExempleCollection.java)
 
 #### Sortida de l'execució de la **`interfície`** **`ExempleCollection`**. 
 
@@ -243,7 +243,7 @@ public class Criatura implements Comparable {
 
 > ### [**Implementa la **Classe** **`Interfície`** de **Java** **`Comparable<T>`**](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
 
-#### Aquí podeu trobar el codi de la **`Classe`** [**`Criatura.java`**](./Criatura.java)
+#### Aquí podeu trobar el codi de la **`Classe`** [**`Criatura.java`**](./files/Criatura.java)
 
 <hr>
 
@@ -293,7 +293,7 @@ public class GuardarCriatures {
 }
 ```
 
-#### Aquí podeu trobar el codi de la **`Classe`** [**`GuardarCriatures.java`**](./GuardarCriatures.java)
+#### Aquí podeu trobar el codi de la **`Classe`** [**`GuardarCriatures.java`**](./files/GuardarCriatures.java)
 
 #### Sortida de l'execució de la **`Classe`** **`GuardarCriatures`**. 
 
@@ -344,7 +344,7 @@ public interface Mainaderia {
 }
 ```
 
-#### Aquí podeu trobar el codi de la **`Interfície`** [**`Mainaderia.java`**](./Mainaderia.java)
+#### Aquí podeu trobar el codi de la **`Interfície`** [**`Mainaderia.java`**](./files/Mainaderia.java)
 
 <hr>
 
@@ -426,7 +426,7 @@ public class MainaderiaList implements Mainaderia {
 }
 ```
 
-#### Aquí podeu trobar el codi de la **`Classe`** [**`MainaderiaList.java`**](./MainaderiaList.java)
+#### Aquí podeu trobar el codi de la **`Classe`** [**`MainaderiaList.java`**](./files/MainaderiaList.java)
 
 <hr>
 
@@ -517,7 +517,7 @@ public class ExempleIteracio {
 }
 ```
 
-#### Aquí podeu trobar el codi de la **`Classe`** [**`ExempleIteracio.java`**](./ExempleIteracio.java)
+#### Aquí podeu trobar el codi de la **`Classe`** [**`ExempleIteracio.java`**](./files/ExempleIteracio.java)
 
 
 Exemple d'execució de la classe ExempleIteracio
