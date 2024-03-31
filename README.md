@@ -1,12 +1,12 @@
 # Estructures de Dades i Algorismes "Collections"
 
-## Codi dels exemple
+### Codi dels exemple
 
-## Dr. Enric Sesa i Nogueras
+### Dr. Enric Sesa i Nogueras
 
 <details><summary>Pitja per veure l'Índex</summary>
 
-> ### Índex
+> ## Índex
 > 
 > **1.** [Implementació de la **Classe** **`Element`**](#1-la-classe-element-classe-utilitzada-en-els-següents-exemples)
 > 
@@ -26,7 +26,9 @@
 >
 </details>
 
-### **1.** La **Classe `Element`** (classe utilitzada en els següents exemples)
+## **1.** La **Classe `Element`** (classe utilitzada en els següents exemples)
+
+<details><summary>Pitja per veure el codi</summary>
 
 ```java
 public class Element {
@@ -75,12 +77,14 @@ public class Element {
     }
 }
 ```
+<hr>
+</details>
 
 #### Aquí podeu trobar el codi de la **Classe** [**`Element.java`**](./files/Element.java)
 
 <hr>
 
-### **2.** Un exemple de la **Classe** **`Interfície`** **`Collection`**
+## **2.** Un exemple de la **Classe** **`Interfície`** **`Collection`**
 
 ```java
 import java.util.ArrayList;
@@ -166,7 +170,7 @@ Sum is: 36
 
 <hr>
 
-### **3.** La **Classe** **`Criatura`** (classe utilitzada en els següents exemples)
+## **3.** La **Classe** **`Criatura`** (classe utilitzada en els següents exemples)
 
 ```java
 public class Criatura implements Comparable {
@@ -247,7 +251,7 @@ public class Criatura implements Comparable {
 
 <hr>
 
-### **4.** Un exemple de la **Classe** **`GuardarCriatures`** que d’utilitza la **`Classe`** **`List`** de **Java**
+## **4.** Un exemple de la **Classe** **`GuardarCriatures`** que d’utilitza la **`Classe`** **`List`** de **Java**
 
 ```java
 import java.util.LinkedList;
@@ -322,7 +326,7 @@ Criatura de nom OLGA    amb 2 anys              i amb sexe de nena.
 
 <hr>
 
-### **5.** Un exemple de la **Classe** **`Interfície`** **`Mainaderia`**
+## **5.** Un exemple de la **Classe** **`Interfície`** **`Mainaderia`**
 
 ```java
 public interface Mainaderia {
@@ -357,7 +361,7 @@ public interface Mainaderia {
 
 <hr>
 
-### **6.** Una implementació de la **`Interfície`** **`Mainaderia`** que utilitza un objecte List
+## **6.** Una implementació de la **`Interfície`** **`Mainaderia`** que utilitza un objecte List
 
 ```java
 import java.util.*;
@@ -439,7 +443,7 @@ public class MainaderiaList implements Mainaderia {
 
 <hr>
 
-### **7.** Un exemple de la **Classe** **`ExempleIteracio`**
+## **7.** Un exemple de la **Classe** **`ExempleIteracio`**
 
 ```java
 import java.util.Iterator;
@@ -528,9 +532,9 @@ public class ExempleIteracio {
 
 #### Aquí podeu trobar el codi de la **`Classe`** [**`ExempleIteracio.java`**](./files/ExempleIteracio.java)
 
+#### Sortida de l'execució de la **`Classe`** **`ExempleIteracio`**. 
 
-Exemple d'execució de la classe ExempleIteracio
-
+<pre>
 Mostrar totes les criatures
 Criatura de nom: NIL, té 0 anys. Sexe: nen
 Criatura de nom: PERE, té 1 anys. Sexe: nen
@@ -555,121 +559,77 @@ Criatura de nom: NIL, té 1 anys. Sexe: nen
 Criatura de nom: VICTOR, té 2 anys. Sexe: nen
 Criatura de nom: ONA, té 1 anys. Sexe: nena
 Criatura de nom: FIONA, té 2 anys. Sexe: nena
+</pre>
 
+<hr>
 
+## **8.** Primer exemple (**`Exemple_Map_01.java`**) de la **Classe** **`Criatura`** amb **`Maps`**
 
-
-Exemple_Map_01 Primer exemple amb Maps
 ```java
 import java.util.*;
 public class Exemple_Map_01 {
-   public static void main(String[] args) {
-      Criatura[] poblacio = {
-         new Criatura("NIL", 0, Criatura.NEN),
-         new Criatura("PERE", 1, Criatura.NEN),
-         new Criatura("NEUS", 0, Criatura.NENA),
-         new Criatura("ONA", 1, Criatura.NENA),
-         new Criatura("DÍDAC", 0, Criatura.NEN),
-         new Criatura("NÚRIA", 1, Criatura.NEN),
-         new Criatura("EVA", 3, Criatura.NENA),
-         new Criatura("FIONA", 2, Criatura.NENA),
-         new Criatura("ENIA", 3, Criatura.NENA)
-      };
-   // Map per aparellar cada criatura amb el nom del seu pediatra
-      Map<Criatura, String> serveiPediatria;
-      String nomPediatra;
-      serveiPediatria = new HashMap<Criatura, String>();
-   //els tres primers amb el Dr. Abelardo
-      for (int i = 0; i < 3; i++) {
-         serveiPediatria.put(poblacio[i], "Abelardo");
-      }
-   //els tres següents amb la Dra. Banach
-      for (int i = 3; i < 6; i++) {
-         serveiPediatria.put(poblacio[i], "Banach");
-      }
-   //i tota la resta amb la Dra. Canyet
-      for (int i = 6; i < poblacio.length; i++) {
-         serveiPediatria.put(poblacio[i], "Canyet");
-      }
-   // Ara podem consultar qui es el pedriatra de cada criatura:
-      System.out.println();
-      for (Criatura c : poblacio) {
-         nomPediatra = serveiPediatria.get(c);
-         System.out.println("El/la pediatra de la critura");
-         System.out.println(" " + c);
-         System.out.println(" és el/la Dr./Dra. " + nomPediatra);
-      }
-   // Map també ens permet recuperar el conjunt de claus
-   // (en aquest cas les claus són les criatures)
-      Set<Criatura> criaturesAteses;
-         criaturesAteses = serveiPediatria.keySet();
-         System.out.println("\n Les criatures ateses pel servei són:");
-            for (Criatura c : criaturesAteses)
-               System.out.println(" "+c);
-   // Map ens permet recuperar la col·lecció de valors associats
-   // a les claus (en aquest exemple els valors són els pediatres
-   // -Strings-)
-      Collection<String> pediatres;
-      pediatres = serveiPediatria.values();
-      System.out.println("\n Els/les pediatres del servei són:");
-      for (String ped : pediatres)
-         System.out.println(" "+ped);
-   }
+    public static void main(String[] args) {
+        Criatura[] poblacio = {
+                new Criatura("NIL", 0, Criatura.NEN),
+                new Criatura("PERE", 1, Criatura.NEN),
+                new Criatura("NEUS", 0, Criatura.NENA),
+                new Criatura("ONA", 1, Criatura.NENA),
+                new Criatura("DÍDAC", 0, Criatura.NEN),
+                new Criatura("NÚRIA", 1, Criatura.NEN),
+                new Criatura("EVA", 3, Criatura.NENA),
+                new Criatura("FIONA", 2, Criatura.NENA),
+                new Criatura("ENIA", 3, Criatura.NENA)
+        };
+
+        // Map per aparellar cada criatura amb el nom del seu pediatra
+        Map<Criatura, String> serveiPediatria;
+        String nomPediatra;
+        serveiPediatria = new HashMap<Criatura, String>();
+        
+        // Els tres primers amb el Dr. Abelardo
+        for (int i = 0; i < 3; i++) {
+            serveiPediatria.put(poblacio[i], "Abelardo");
+        }
+
+        // Els tres següents amb la Dra. Banach
+        for (int i = 3; i < 6; i++) {
+            serveiPediatria.put(poblacio[i], "Banach");
+        }
+
+        // I tota la resta amb la Dra. Canyet
+        for (int i = 6; i < poblacio.length; i++) {
+            serveiPediatria.put(poblacio[i], "Canyet");
+        }
+
+        // Ara podem consultar qui es el pediatra de cada criatura:
+        System.out.println();
+        for (Criatura c : poblacio) {
+            nomPediatra = serveiPediatria.get(c);
+            System.out.println("El/la pediatra de la critura");
+            System.out.println(" " + c);
+            System.out.println(" és el/la Dr./Dra. " + nomPediatra);
+        }
+
+        // Map també ens permet recuperar el conjunt de claus
+        // en aquest cas les claus són les criatures
+        Set<Criatura> criaturesAteses;
+            criaturesAteses = serveiPediatria.keySet();
+            System.out.println("\n Les criatures ateses pel servei són:");
+            for (Criatura criaturaActual : criaturesAteses)
+                System.out.println(" "+criaturaActual);
+
+        // Map ens permet recuperar la col·lecció de valors associats
+        // a les claus (en aquest exemple els valors són els pediatres
+        // -Strings-)
+        Collection<String> pediatres;
+        pediatres = serveiPediatria.values();
+        System.out.println("\n Els/les pediatres del servei són:");
+        for (String ped : pediatres)
+            System.out.println(" "+ped);
+    }
 }
 ```
 
-Exemple_Map_01 Primer exemple amb Maps
-```java
-import java.util.*;
-public class Exemple_Map_02 {
-   public static void main (String [] args) {
-      Criatura [] poblacio = {
-         new Criatura("NIL",0,Criatura.NEN),
-         new Criatura("PERE",1, Criatura.NEN),
-         new Criatura("NEUS",0, Criatura.NENA),
-         new Criatura("ONA",1, Criatura.NENA),
-         new Criatura("DÍDAC",0, Criatura.NEN),
-         new Criatura("NÚRIA",1, Criatura.NEN),
-         new Criatura("EVA",3, Criatura.NENA),
-         new Criatura("FIONA",2, Criatura.NENA),
-         new Criatura("ENIA",3, Criatura.NENA)
-      };
-   // Map per aparellar cada criatura amb el nom del seu pediatra
-      Map<Criatura,String> serveiPediatria;
-      String nomPediatra;
-      serveiPediatria = new HashMap<Criatura, String>();
-   //els tres primers amb el Dr. Abelardo
-      for (int i=0; i<3; i++) {
-         serveiPediatria.put(poblacio[i], "Abelardo");  }
-   //els tres següents amb la Dra. Banach
-      for (int i=3; i<6; i++) {
-         serveiPediatria.put(poblacio[i], "Banach");  }
-   //i tota la resta amb la Dra. Canyet
-      for (int i=6; i<poblacio.length; i++) {
-         serveiPediatria.put(poblacio[i], "Canyet");  }
-   // Ara podem consultar qui es el pedriatra de cada criatura:
-      System.out.println();
-      for (Criatura c: poblacio) {
-         nomPediatra = serveiPediatria.get(c);
-         System.out.println("El/la pediatra de la critura");
-         System.out.println(" "+c);
-         System.out.println(" és el/la Dr./Dra. "+ nomPediatra);
-      }
-   // Map també ens permet recuperar el conjunt de claus
-   // (en aquest cas les claus són les criatures)
-      Set<Criatura> criaturesAteses;
-      criaturesAteses = serveiPediatria.keySet();
-      System.out.println("\n Les criatures ateses pel servei són:");
-      for (Criatura c : criaturesAteses)
-         System.out.println(" "+c);
-   // Map ens permet recuperar la col·lecció de valors associats
-   // a les claus (en aquest exemple els valors són els pediatres
-   // -Strings-)
-      Collection<String> pediatres;
-      pediatres = serveiPediatria.values();
-      System.out.println("\n Els/les pediatres del servei són:");
-      for (String ped : pediatres)
-         System.out.println(" "+ped);
-   }
-}
-```
+#### Aquí podeu trobar el codi de la **`Classe`** [**`Exemple_Map_01.java`**](./files/Exemple_Map_01.java)
+
+
