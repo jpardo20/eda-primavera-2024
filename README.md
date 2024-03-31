@@ -241,7 +241,7 @@ public class Criatura implements Comparable {
 }
 ```
 
-> ### [**Implementa la **Classe** **`Interfície`** de **Java** **`Comparable<T>`**](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
+> ### [Implementa la **Classe** **`Interfície`** de **Java** **`Comparable<T>`**](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html)
 
 #### Aquí podeu trobar el codi de la **`Classe`** [**`Criatura.java`**](./files/Criatura.java)
 
