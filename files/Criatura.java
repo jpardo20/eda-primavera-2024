@@ -1,5 +1,6 @@
 package files;
 
+@SuppressWarnings("rawtypes")
 public class Criatura implements Comparable {
 // Constants
     public static final int NEN = 10;

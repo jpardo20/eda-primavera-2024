@@ -1,6 +1,7 @@
 package files;
 import java.util.*;
 
+@SuppressWarnings("rawtypes")
 public class MainaderiaList implements Mainaderia {
     // Atributs
     // Referencia a objecte de la classe List on "guardarem" les criatures...
@@ -14,6 +15,7 @@ public class MainaderiaList implements Mainaderia {
 
     // Mètodes
     // Afegeix una criatura. Excepció si ja hi ha una criatura igual
+    @SuppressWarnings("unchecked")
     public void matricular(Criatura criaturaRebuda) throws IllegalArgumentException {
         if (this.contingut.contains(criaturaRebuda))
             throw new IllegalArgumentException("matricular: criatura repetida");

@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ExempleIteracio {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main (String [] args ) {
         // Declaració de variables
         List nens = new LinkedList();

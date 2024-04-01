@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class GuardarCriatures {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main (String [] args) {
         Criatura [] vectorCriatures = {
             new Criatura("NIL",0,Criatura.NEN),
@@ -48,5 +49,9 @@ public class GuardarCriatures {
         Criatura target = new Criatura("nil", 3, Criatura.NEN);
         primerNil = llarDInfants.indexOf(target);
         darrerNil = llarDInfants.lastIndexOf(target);
+
+        System.out.println("primerNil = " + primerNil);
+        System.out.println("darrerNil = " + darrerNil);
+
     }
 }

@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Vector;
 
 public class ExempleCollection {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main (String [] args) {
         Collection total, subOne, subTwo;
 
